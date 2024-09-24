@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-    color: #6D3112;
+    color: var(--gray);
     font-weight: bold;
 }
 
@@ -87,6 +87,9 @@ section {
 
 article {
     padding: 1em;
+}
+.col{
+    color: black;
 }
 
 footer {
