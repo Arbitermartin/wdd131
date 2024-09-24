@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Playpen+Sans:wght@100..800&display=swap');
+
 :root {
     --alink: #0000ee;
     --avisited: #551a8b;
@@ -37,7 +39,7 @@ body {
     grid-template: 1fr 4fr .5fr / auto 1fr auto;
     margin: 1rem auto;
     color: #5C5346;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
 }
 
 header {
