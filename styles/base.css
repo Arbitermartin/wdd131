@@ -39,7 +39,6 @@ body {
     grid-template: 1fr 4fr .5fr / auto 1fr auto;
     margin: 1rem auto;
     color: #5C5346;
-    /* font-family: "Roboto", Arial, Helvetica, sans-serif; */
 }
 
 header {
@@ -112,10 +111,10 @@ h2 {
     font-size: 1.4em;
 }
 
-h1,
+/* h1,
 h2 {
     font-family: "Lora", Georgia, 'Times New Roman', serif;
-}
+} */
 
 .card-left {
     margin-right: .5em;
