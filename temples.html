@@ -1,98 +1,75 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals - Martin Kasike. Explore the landing page of the website, featuring a detailed profile page.">
-    <meta name="author" content="Martin Kasike">
-    <title>WDD 131 - Dynamic Web Fundamentals - Martin Kasike</title>
+    <title>Temple Album</title>
+    <meta name="description" content="Temple Album Project Homepage for Oswell Okine">
+    <meta name="author" content="Oswell Okine">
+    <link rel="stylesheet" href="styles/temples.css" media="all">
+    <link rel="stylesheet" href="styles/temples-large.css" media="all">
+    <script src="scripts/temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link the JavaScript file with defer -->
-    <script src="scripts/temples.js" defer></script>
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <h1>Temple Album</h1>
-            </div>
-            <ul class="navigation">
-             <li><a href="#">Home</a></li>
-             <li><a href="#">Old</a></li>
-             <li><a href="#">New</a></li>
-             <li><a href="#">Large</a></li>
-             <li><a href="#">small</a></li>
-            </ul>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu" aria-label="menu"></button>
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">Old</a>
+            <a href="">New</a>
+            <a href="">Large</a>
+            <a href="">Small</a>
         </nav>
     </header>
+    
     <main>
+        <h2>Home</h2>
         <div class="container">
-            <div class="pictures">
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-                <div class="picture-1">
-                    <figure>
-                        <img src="images/byu.jpg" alt="">
-                        <figcaption>Lorem, ipsum.</figcaption>
-                    </figure>
-                </div>
-            </div>
+            <figure>
+                <img src="images/byu.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu1.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu2.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu3.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu1.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu1.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/byu3.jpg" alt="Accra Ghana Temple">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
         </div>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> Martin Arexander Kasike | Tanzania  <br>Last modified: <span id="lastModified"></span></p>
+        <p>© <span id="currentYear"></span>  Martin kasike | Tanzania</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
