@@ -1,10 +1,28 @@
+:root {
+    --alink: #0000ee;
+    --avisited: #551a8b;
+  
+    --lightgray: rgb(240, 240, 240);
+    --gray: rgb(150, 150, 150);
+    --darkgray: rgb(50, 50, 50);
+    --byuiblue: rgb(0, 110, 182);
+    --navy: rgba(0, 0, 128, 0.847);
+    --red: rgb(182, 0, 19);
+    --purple: rgb(103, 48, 155, .2);
+    --mustard: rgb(182, 163, 0);
+    --callout: rgb(230, 243, 254);
+    --error: rgb(255, 215, 225);
+    --warning: rgb(255, 255, 225);
+    --details: rgb(238, 254, 238);
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #001F54;
+    background-color: var(--navy);
     margin: 0;
     color: #FEFCFB;
     padding: 1rem;
@@ -48,7 +66,7 @@ h1 {
     list-style: none;
     max-width: 500px;
     margin: 1rem auto;
-    background-color: #001F54;
+    background-color: var(--navy);
 }
 
 .navigation a {
@@ -92,7 +110,7 @@ figcaption {
 
 footer {
     text-align: center;
-    background-color: #001F54;
+    background-color: var(--navy);
     color: #fff;
     padding: 1rem;
     font-family: "Roboto", sans-serif;

@@ -22,7 +22,7 @@
     }
 
     .navigation a:hover {
-        background-color: #1282A2;
+        text-decoration: underline;
         border-radius: 50px;
         transition: 0.5s;
         transform: scale(1.15);
