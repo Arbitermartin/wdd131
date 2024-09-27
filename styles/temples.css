@@ -83,6 +83,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2rem;
 
 }
 .pictures{
@@ -129,4 +130,7 @@ h2 {
     display: block;
     column-gap: 2rem;
    }
+   /* footer{
+    height: 4rem;
+   } */
 }
