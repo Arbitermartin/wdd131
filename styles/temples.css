@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    background-color: var(--byuiblue);
+    background-color: var(--navy);
     margin: 0;
     color: #FEFCFB;
     padding: 1rem;
