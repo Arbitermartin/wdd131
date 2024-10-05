@@ -10,7 +10,7 @@ footerParagraphs[1].textContent = `Last modified: ${lastModifiedDate}`;
 function calculateWindChill(temperature, windSpeed, units) 
 {
   if (units == "C") 
-    if (temperature <= 10 && windSpeed >= 4.8)
+    if (temperature <= 20 && windSpeed >= 5.8)
     {
       return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
     }
