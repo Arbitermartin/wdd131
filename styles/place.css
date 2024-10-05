@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --heading-font: "Jersey 10", sans-serif; 
+    --color: white;
+    --text-font: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--color);
+    font-family: var(--text-font);
+}
+
+header, footer {
+    background-color: rgb(157, 38, 38);
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--color);
+    font-family: var(--heading-font);
+    font-size: 60px;
+	text-align: center;
+    padding: 0.3rem;
+}
+
+.hero {
+    background-color: rgb(39, 49, 127);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: 40px;
+    padding: 1rem;
+    color: rgb(97, 87, 2);
+    text-align: center;
+}
+
+section {
+    padding: 2rem;
+    border: 1px solid rgb(197, 190, 123);
+}
+
+.weather img {
+    display:block;
+    margin: 0 auto;     
+    padding-bottom: 1rem;   
+}
+
+
+section dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+}
+
+dt {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+dt::after {
+    content: ':';
+  }
+
+dd {
+    text-align: left;
+}
+
+
+footer {
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 0;
+    color: var(--color);
+    padding: 1rem;
+}
+
+#lastModified {
+    text-align: center;
+    font-size : 13px;
+    padding-top: 0.5rem;
+
+    
+}
+
+@media screen and (min-width: 1000px) {
+
+    h2 {
+        position: absolute;
+        background-color: rgba(59, 68, 136, 0.7);
+        color: black;
+        left: 10px;
+        top: 40px;
+        padding: 1rem;
+        padding-left: 2.3rem;
+        width: 250px;
+        text-align: left;
+    }
+    
+    section {
+        width: 300px;
+        padding: 2rem;
+        padding-top: 95px;
+        margin: 30px;
+        background-color: rgb(255, 255, 255, 0.8);   
+        text-align: center;
+    }
+    
+    .data {
+        position: absolute;
+        top: 135px;
+    }
+    
+    .weather {
+        position: absolute;
+        right: 1px;
+        top: 650px;
+    }
+    
+    .weather img {
+        position: absolute;
+        bottom: 159px;
+        right: 145px;
+    }
+
+}
+
+
