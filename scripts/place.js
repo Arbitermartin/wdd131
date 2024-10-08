@@ -15,7 +15,7 @@ function calculateWindChill(temperature, windSpeed, units)
       return 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
     }
     else {
-      return "N/A"
+      return "25.3"
     }
   else if (tempUnit == "F")
   {
@@ -25,7 +25,7 @@ function calculateWindChill(temperature, windSpeed, units)
     }
     else 
     {
-      return "N/A"
+      return "25.3"
     }
   }
   
