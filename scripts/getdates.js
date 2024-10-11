@@ -1,12 +1,8 @@
-// Create a new Date object
-const today = new Date();
+  // year
+  const year = document.querySelector("#currentyear");
+  const today = new Date();
+  year.innerHTML = `<span>${today.getFullYear()}</span>`;
 
-// Select the elements
-const currentYear = document.querySelector("#currentYear");
-const lastModified = document.querySelector("#lastModified");
-
-// Set the current year in the currentYear element
-currentYear.innerHTML = `${today.getFullYear()}`;
-
-// Set the last modified date
-lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
+  //last modified
+  const date = document.querySelector("#lastModified");
+  date.innerHTML = `<span>${document.lastModified}<span>`;
