@@ -59,6 +59,7 @@ nav>a {
 
 nav>a:hover {
     color: #000;
+    back
     text-decoration-line: underline;
 }
 
