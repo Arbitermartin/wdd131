@@ -5,4 +5,4 @@
 
   //last modified
   const date = document.querySelector("#lastModified");
-  date.innerHTML = `<span>${document.lastModified}<span>`;
+  date.innerHTML = `<span>${document.lastModified}<span>`
