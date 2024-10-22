@@ -1,6 +1,90 @@
+:root{
+    --primary-color: #6f6af8;
+    --color-primary-light: hsl(242,91%,69%,18%);
+    --color-primary-variant: #5854c7;
+    --color-red:#da0f3f;
+    --secondary-color:#1A659E;
+    --premier-color: #FF6B35;
+    --color-first:red;
+    --mporipori-color: #333333;
+    --color-red-light: hsla(346, 87%, 37%, 15%);
+    --color-green: #00c476;
+    --color-green-light: hsl(156,100%,38%,15%);
+    --color-bg: #0f0f3e;
+    --color-gray-900: #1e1e66;
+    --color-gray-700: #2d2b7c;
+    --color-gray-300: rgba(242,242,254,0.3);
+    --color-gray-200: rgba(242,242,242,0.7);
+    --color-white:#f2f2fe;
+    --color-light: #055864;
+}
+
+
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--color-gray-200);
+    overflow-x: hidden;
+    font-size: 0.9rem;
+    background-image: url('/images/coding.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    background-color: rgba(0,0,0,0.78);
+}
+.container{
+    width: var(--container-width-lg);
+    max-width: 1800px;
+    margin-inline: auto;
+}
+nav{
+    background: var(--color-primary-variant);
+    width: 100vw;
+    height: 4.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow:  0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+.nav-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-left: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--color-white);
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 5rem;
+}
+.nav-items>li a{
+    color: var(--color-white);
+}
+.container-1{
+    margin-top: 5rem;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+input[name=hello]{background-color: #055864;}
+@media (max-width:670){
+    body{
+        padding: 4rem;
+    }
 }
