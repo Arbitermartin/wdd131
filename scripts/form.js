@@ -55,5 +55,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const lastModified = document.lastModified;
 
     if (currentYearSpan) currentYearSpan.textContent = currentYear;
-    if (lastModifiedSpan) lastModifiedSpan.textContent = lastModified;
+    if (lastModifiedSpan) lastModifiedSpan.textContent = lastModified;  
 });
