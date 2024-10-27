@@ -158,7 +158,7 @@ nav ul li ul li a{
 
 
 .port{
-   background-image: url('/PROJECT/images/coding.jpg');
+   background-image: url('../images/coding.jpg');
    margin-top: 0rem;
    padding: 5rem;
    background-repeat: no-repeat;
