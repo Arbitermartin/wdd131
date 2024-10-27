@@ -1,41 +1,26 @@
-const navItems = document.querySelector('.nav-items');
-const openNavBtn = document.querySelector('#open_nav-btn');
-const closeNavBtn = document.querySelector('#close_nav-btn');
 
+const currentYearSpan = document.getElementById("currentyear");
+    const lastModifiedSpan = document.getElementById("lastModified");
 
-const openNav = () =>{
-  navItems.style.display ='flex';
-  openNavBtn.style.display ='none';
-  closeNavBtn.style.display ='inline-block';
-   
-}
-const closeNav = () =>{
-  navItems.style.display ='none';
-  openNavBtn.style.display ='inline-block';
-  closeNavBtn.style.display ='none';
-   
-}
- openNavBtn.addEventListener('click' ,openNav);
- closeNavBtn.addEventListener('click',closeNav);
+    const currentYear = new Date().getFullYear();
+    const lastModified = document.lastModified;
 
+    if (currentYearSpan) currentYearSpan.textContent = currentYear;
+    if (lastModifiedSpan) lastModifiedSpan.textContent = lastModified; 
 
-const sidebar =document.querySelector('aside');
-const showSidebarBtn =document.querySelector('#show__sidebar-btn');
-const hideSidebarBtn =document.querySelector('#hide__sidebar-btn');
-
-//show sidebar on small devices.
- const showSidebar = () =>{
-  sidebar.style.left ='0';
-  showSidebarBtn.style.display ='none';
-  hideSidebarBtn.style.display ='inline-block';
- }
-
- //show sidebar on small devices.
- const hideSidebar = () =>{
-  sidebar.style.left ='-100%';
-  showSidebarBtn.style.display ='inline-block';
-  hideSidebarBtn.style.display ='none';
- }
-showSidebarBtn.addEventListener('click',showSidebar);
-hideSidebarBtn.addEventListener('click',hideSidebar);
-
+    $(document).ready(function() {
+        $('nav ul li a:not(:only-child)').click(function(e) {
+            $(this).siblings('.nav-dropdown').toggle();
+            e.stopPropagation();
+        });
+    
+        $('html').click(function(){
+            $('.nav-dropdown').hide();
+        })
+        $('#nav-toggle').click(function(){
+            $('nav ul').slideToggle();
+        })
+        $('#nav-toggle').on('click', function(){
+            this.classList.toggle('active');
+        });
+    });

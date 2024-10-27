@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +7,71 @@
     <title>MARTIN PORTFOLIO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../PROJECT/CSS/styles.css">
-    <script src="scripts/form.js" defer></script>
+    <script src="../PROJECT/JS/script.js" defer></script>
 </head>
 <body>
-   <nav>
-     <ul class="nav-bar">
-        <h1>MARTIN PORTFOLIO</h1>
-        <li><a href="">Home</a></li>
-        <li><a href="">About Me</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-     </ul>
-   </nav>
+  <div class="nav-bar">
+    <div class="nav-container">
+        <div class="brand">
+            <a href="#">MARTIN PORTFOLIO</a>
+        </div>
+        <nav>
+            <div class="nav-mobile">
+                <a href="#" id="nav-toggle">
+                    <span></span>
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a</li>
+                
+            </ul>
+        </nav>
+    </div>
+</div>
         <section class="port">
-
+    
         </section>
+        <section>
+          <div class="container">
+            <div class="item">
+              <div class="item-1">
+                <h3>About Me page</h3>
+                My name is Martin Alexander Kasike, born in Iringa, and I am one of the students at BYU-Idaho studying a certificate in Web and Computer Programming. I really love programming, and I am also certified in ethical hacking from Networkwalks Academy</p>
+              </div>
+              <div class="item-1">
+                <h3>Skills.</h3>
+                <p>I have skills in HTML, CSS, JavaScript, Python, PHP, and cybersecurity, and I love these fields because they make me very happy in life</p>
+              </div>
+              <div class="item-1">
+                <h3>projects</h3>
+                <p>I have many projects in my career, but I'm struggling to work on some of them due to a lack of funds to implement them. That’s why I really wish to get money so I can carry out one of my projects called 'Integration of ICT in Agromats</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container-1">
+            <div class="items">
+              <h3>FREQUENT ASKED QUESTIONS</h3>
+             <ol>
+              <li>How did you manage to study in difficult circumstances?
+              </li>
+              <li>Do you think your education will liberate you?
+              </li>
+              <li>Is programming easy for you?
+              </li>
+             </ol>
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p>© <span id="currentyear">2024</span> Martin Kasike - Tanzania, Iringa</p>
+          <p class="last-modification">Last Modification: <span id="lastModified"></span></p>
+      </footer>
     </body>
 </html>
