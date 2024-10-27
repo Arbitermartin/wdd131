@@ -196,6 +196,8 @@ nav ul li ul li a{
     padding: 2rem;
     color: var(--color-white);
     border-radius: 0.2rem;
+    text-align: center;
+    line-height: 2rem;
 }
 h3{
     text-align: center;
